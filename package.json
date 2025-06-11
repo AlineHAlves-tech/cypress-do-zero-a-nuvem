@@ -4,7 +4,10 @@
   "description": "Curso 'Cypress, do Zero à Nuvem' da Escola Talking About Testing.",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "test:allure": "npm run test && npm run allure:generate"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
     "url": "https://github.com/wlsf82/cypress-do-zero-a-nuvem/issues"
   },
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.0",
     "cypress": "^14.3.3"
   }
 }
