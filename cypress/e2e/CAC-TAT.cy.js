@@ -86,7 +86,7 @@ describe('Central de Atendimento ao Cliente', () => {
   });
 
   //TESTE 12
-  it('Acessa a página de política de provacidade removendo o target e então clicando ', () => {
+  it('Acessa a página de política de privacidade removendo o target e então clicando ', () => {
     cy.contains('a', 'Política de Privacidade').invoke('removeAttr', 'target').click();
 
     cy.contains('h1', 'CAC TAT - Política de Privacidade').should('be.visible');
