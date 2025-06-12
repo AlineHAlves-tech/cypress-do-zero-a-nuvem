@@ -92,4 +92,9 @@ describe('Central de Atendimento ao Cliente', () => {
     cy.contains('h1', 'CAC TAT - Política de Privacidade').should('be.visible');
   });
 
+
+
+
+  
+
 });
