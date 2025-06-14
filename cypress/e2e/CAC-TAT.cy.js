@@ -71,7 +71,7 @@ describe('Central de Atendimento ao Cliente', () => {
     cy.get('#email-checkbox').check();
     clicarEVerificarMensagemDeSucesso();
   })
-
+  
   //TESTE 10
   it('Fazendo Upload de arquivo', () => {
     preencherFormulario('Aline', 'Alves', 'aline@teste.com', '000000000');
@@ -91,10 +91,4 @@ describe('Central de Atendimento ao Cliente', () => {
 
     cy.contains('h1', 'CAC TAT - Política de Privacidade').should('be.visible');
   });
-
-
-
-
-  
-
 });
